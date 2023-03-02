@@ -1,5 +1,5 @@
 [![Patreon donate button](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/mastashake08)
-[![npm](https://img.shields.io/npm/v/buttplug.svg)](https://npmjs.com/package/mastashake08/discord-gpt-bot)
+[![npm](https://img.shields.io/npm/v/buttplug.svg)](https://npmjs.com/package/discord-gpt-bot)
 [![Discord](https://img.shields.io/badge/Discord-Join%20My%20Server-blue)](https://discord.gg/DMbMmQvvQh)
 [![CodeLife](https://img.shields.io/badge/Code%20Life-Join%20The%20Team-brightgreen)](https://bit.ly/30vZro9)
 
