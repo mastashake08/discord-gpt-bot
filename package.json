@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/mastashake08/discord-gpt-bot/issues"
   },
-  "homepage": "https://github.com/mastashake08/discord-gpt-bot#readme"
+  "homepage": "https://github.com/mastashake08/discord-gpt-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  }
 }
