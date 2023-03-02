@@ -1,6 +1,6 @@
 {
   "name": "discord-gpt-bot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add ChatGPT to your Discord server. Responds with a ChatGPT generated text when @.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "discord"
   ],
   "author": "Mastashake08",
-  "license": "MIT",
+  "license": "GPL3",
   "bugs": {
     "url": "https://github.com/mastashake08/discord-gpt-bot/issues"
   },

@@ -62,6 +62,3 @@ docker run  --env-file=<PATH TO .ENV> -d --name=<NAME> mastashake08/discord-gpt-
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
