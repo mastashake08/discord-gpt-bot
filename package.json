@@ -1,6 +1,6 @@
 {
   "name": "discord-gpt-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add ChatGPT to your Discord server. Responds with a ChatGPT generated text when @.",
   "main": "index.js",
   "scripts": {
