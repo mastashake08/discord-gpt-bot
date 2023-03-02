@@ -1,0 +1,27 @@
+{
+  "name": "discord-gpt-bot",
+  "version": "1.0.0",
+  "description": "Add ChatGPT to your Discord server. Responds with a ChatGPT generated text when @.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastashake08/discord-gpt-bot.git"
+  },
+  "keywords": [
+    "OpenAI",
+    "ChatGPT",
+    "gpt",
+    "discord",
+    "bots",
+    "discord"
+  ],
+  "author": "Mastashake08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mastashake08/discord-gpt-bot/issues"
+  },
+  "homepage": "https://github.com/mastashake08/discord-gpt-bot#readme"
+}
