@@ -53,10 +53,6 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 })();
 
 client.login(process.env.DISCORD_TOKEN)
- client.on('ready', async () => {
-   console.log('CONNECTED TO SERVER')
-   const channel = await client.channels.fetch(process.env.DISCORD_CHANNEL_ID)
-    })
   client.on(Events.InteractionCreate, async interaction => {
     if (interaction.commandName === 'generate-prompt') {
       const res = await generate(interaction.options.getString('prompt'))
