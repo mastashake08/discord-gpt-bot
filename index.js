@@ -10,7 +10,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-async function generate(prompt, model="text-davinci-003") {
+async function generate(prompt, model="gpt-3.5-turbo") {
   const completion = await openai.createCompletion({
     model: model,
     prompt: prompt
