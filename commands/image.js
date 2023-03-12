@@ -10,12 +10,12 @@ const openai = new OpenAIApi(configuration);
 
 module.exports = {
 	data: new SlashCommandBuilder()
-   .setName('generate-answer')
-   .setDescription('Generate a ChatGPT reponse!')
+   .setName('generate-image')
+   .setDescription('Generate a ChatGPT image!')
    .addStringOption(option =>
      option
      .setName('prompt')
-     .setDescription('The prompt to generate')
+     .setDescription('The image prompt to generate')
      .setRequired(true)
     ),
 };

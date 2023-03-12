@@ -10,12 +10,24 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+async function generateImage(prompt) {
+  const response = await openai.createImage({
+  prompt: prompt,
+  n: 1,
+  size: "1024x1024",
+});
+  const image_url = response.data.data[0].url
+  return image_url
+}
 async function generate(prompt, model="gpt-3.5-turbo") {
-  const completion = await openai.createCompletion({
+  const completion = await openai.createChatCompletion({
     model: model,
-    prompt: prompt
+    messages: [{role: "user", content: prompt}],
+    max_tokens: 2500
   });
-  const text = completion.data.choices[0].text
+  const text = completion.data.choices[0].message.content
+  console.log(completion.data.choices[0].message.content);
+
   return text;
 }
 
@@ -55,7 +67,13 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 client.login(process.env.DISCORD_TOKEN)
   client.on(Events.InteractionCreate, async interaction => {
     if (interaction.commandName === 'generate-prompt') {
+      await interaction.deferReply();
       const res = await generate(interaction.options.getString('prompt'))
-      await interaction.reply({ content: res });
+      await interaction.editReply({ content: res });
+    }
+    if (interaction.commandName === 'generate-image') {
+      await interaction.deferReply();
+      const res = await generateImage(interaction.options.getString('prompt'))
+      await interaction.editReply({ content: res });
     }
     });
