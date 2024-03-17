@@ -19,7 +19,7 @@ async function generateImage(prompt) {
   const image_url = response.data.data[0].url
   return image_url
 }
-async function generate(prompt, model="gpt-3.5-turbo") {
+async function generate(prompt, model=process.env.GPT_MODEL) {
   const completion = await openai.createChatCompletion({
     model: model,
     messages: [{role: "user", content: prompt}],
